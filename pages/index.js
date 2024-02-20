@@ -155,7 +155,7 @@ export default function Home() {
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
           <h1 className="text-3xl font-bold">Practical Projects.</h1>
 
-          <div className="mt-5 laptop:mt-10 grid grid-cols-4 laptop:grid-cols-3 tablet:grid-cols-3 mob:grid-cols-2 gap-4">
+          <div className="mt-5 laptop:mt-10 grid grid-cols-4 laptop:grid-cols-3 tablet:grid-cols-3 mob:grid-cols-1 gap-4">
             {data.projects.map((project) => (
               <WorkCard
                 key={project.id}
@@ -179,6 +179,7 @@ export default function Home() {
                 img={publication.imageSrc}
                 name={publication.title}
                 dates={publication.dates}
+                description={publication.description}
                 onClick={() => window.open(publication.url)}
               />
             ))}
@@ -209,7 +210,7 @@ export default function Home() {
         <div className="mt-10 laptop:mt-20 p-2 laptop:p-0" ref={aboutRef}>
           <h1 className="text-3xl font-bold">About.</h1>
           <div className="opacity-70">
-            <p className="mt-5 text-xl laptop:text-3xl w-full laptop:w-full mob:text-lg">
+            <p className="mt-5 text-xl laptop:text-2xl w-full laptop:w-full mob:text-lg">
               {data.aboutpara}
             </p>
           </div>
