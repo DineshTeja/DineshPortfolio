@@ -126,7 +126,7 @@ export default function Home() {
 
           <div className="flex-1 flex justify-end items-center mob:w-4/5 mob:mt-5">
             <Image
-              src="/images/dinesh_headshot.png"
+              src="/images/dinesh_headshot.jpg"
               alt="Dinesh Vasireddy"
               width={500}
               height={500}
