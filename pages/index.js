@@ -226,7 +226,7 @@ export default function Home() {
                   {resume.languages.map((language, index) => (
                     <div
                       key={index}
-                      className={`px-2 py-1 mb-1 rounded transition-colors duration-200`}                      
+                      className={`px-2 py-1 mb-1 rounded transition-colors duration-200 border-2 border-slate-700`}                      
                     >
                       {language}
                     </div>
@@ -243,7 +243,7 @@ export default function Home() {
                   {resume.frameworks.map((framework, index) => (
                     <div
                       key={index}
-                      className={`px-2 py-1 mb-1 rounded transition-colors duration-200`}                    >
+                      className={`px-2 py-1 mb-1 rounded transition-colors duration-200 border-2 border-slate-700`}                    >
                       {framework}
                     </div>
                   ))}
@@ -252,13 +252,13 @@ export default function Home() {
             )}
 
             {resume.others && (
-              <div className="mt-2 mob:mt-5">
+              <div className="mt-2 mob:mt-5 ml-2 mob:ml-2">
                 <h2 className="text-xl">Others</h2>
                 <div className="flex flex-wrap gap-2">
                   {resume.others.map((other, index) => (
                     <div
                       key={index}
-                      className={`px-2 py-1 mb-1 rounded transition-colors duration-200`}
+                      className={`px-2 py-1 mb-1 rounded transition-colors duration-200 border-2 border-slate-700`}
                     >
                       {other}
                     </div>

@@ -114,7 +114,7 @@ const Resume = () => {
                         {resume.languages.map((language, index) => (
                           <div
                             key={index}
-                            className={`px-2 py-1 mb-1 bg-slate-700 hover:bg-slate-500 opacity-75 rounded transition-colors duration-200`}
+                            className={`px-2 py-1 mb-1 border-2 border-slate-700 opacity-75 rounded transition-colors duration-200`}
                           >
                             {language}
                           </div>
@@ -130,7 +130,7 @@ const Resume = () => {
                         {resume.frameworks.map((framework, index) => (
                           <div
                             key={index}
-                            className={`px-2 py-1 mb-1 bg-slate-700 hover:bg-slate-500 opacity-75 rounded transition-colors duration-200`}
+                            className={`px-2 py-1 mb-1 border-2 border-slate-700 opacity-75 rounded transition-colors duration-200`}
                           >
                             {framework}
                           </div>
