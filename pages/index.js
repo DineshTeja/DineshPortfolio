@@ -217,7 +217,7 @@ export default function Home() {
         </div>
 
         <div className="mt-10 laptop:mt-20 p-2 laptop:p-0">
-          <h1 className="text-3xl font-bold">Skills.</h1>
+          <h1 className="text-3xl font-bold mb-1">Skills.</h1>
           <div className="flex mob:flex-col desktop:flex-row justify-between">
             {resume.languages && (
               <div className="mt-2 mob:mt-5">
@@ -226,7 +226,7 @@ export default function Home() {
                   {resume.languages.map((language, index) => (
                     <div
                       key={index}
-                      className= {`px-2 py-1 mb-1 ${mount && theme.theme === "dark" ? "bg-slate-700 hover:bg-slate-500" : "bg-gray-100 hover:bg-gray-50"} rounded transition-colors duration-200`}
+                      className={`px-2 py-1 mb-1 rounded transition-colors duration-200`}                      
                     >
                       {language}
                     </div>
@@ -238,13 +238,12 @@ export default function Home() {
 
             {resume.frameworks && (
               <div className="mt-2 mob:mt-5">
-                <h2 className="text-xl">Frameworks</h2>
+                <h2 className="text-xl mb-1">Frameworks</h2>
                 <div className="flex flex-wrap gap-2">
                   {resume.frameworks.map((framework, index) => (
                     <div
                       key={index}
-                      className= {`px-2 py-1 mb-1 ${mount && theme.theme === "dark" ? "bg-slate-700 hover:bg-slate-500" : "bg-gray-100 hover:bg-gray-50"} rounded transition-colors duration-200`}
-                    >
+                      className={`px-2 py-1 mb-1 rounded transition-colors duration-200`}                    >
                       {framework}
                     </div>
                   ))}
@@ -259,7 +258,7 @@ export default function Home() {
                   {resume.others.map((other, index) => (
                     <div
                       key={index}
-                      className= {`px-2 py-1 mb-1 ${mount && theme.theme === "dark" ? "bg-slate-700 hover:bg-slate-500" : "bg-gray-100 hover:bg-gray-50"} rounded transition-colors duration-200`}
+                      className={`px-2 py-1 mb-1 rounded transition-colors duration-200`}
                     >
                       {other}
                     </div>

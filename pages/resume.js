@@ -44,9 +44,10 @@ const Resume = () => {
         {mount && (
           <div className="mt-10 w-full flex flex-col items-center">
             <div
-              className={`w-full ${
-                mount && theme.theme === "dark" ? "bg-slate-800" : "bg-gray-50"
-              } max-w-6xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
+              // className={`w-full ${
+              //   mount && theme.theme === "dark" ? "bg-slate-800" : "bg-gray-50"
+              // } max-w-6xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
+              className={`w-full max-w-6xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm border-2 border-slate-700`}
             >
               <h1 className="text-3xl font-bold">{name}</h1>
               <h2 className="text-xl mt-5">{resume.tagline}</h2>
@@ -108,12 +109,12 @@ const Resume = () => {
                 <div className="flex mob:flex-col desktop:flex-row justify-between">
                   {resume.languages && (
                     <div className="mt-2 mob:mt-5">
-                      <h2 className="text-lg">Languages</h2>
+                      <h2 className="text-lg mb-1">Languages</h2>
                       <div className="flex flex-wrap gap-2">
                         {resume.languages.map((language, index) => (
                           <div
                             key={index}
-                            className= {`px-2 py-1 mb-1 ${mount && theme.theme === "dark" ? "bg-slate-700 hover:bg-slate-500" : "bg-gray-100 hover:bg-gray-50"} rounded transition-colors duration-200`}
+                            className={`px-2 py-1 mb-1 bg-slate-700 hover:bg-slate-500 opacity-75 rounded transition-colors duration-200`}
                           >
                             {language}
                           </div>
@@ -122,15 +123,14 @@ const Resume = () => {
                     </div>
                   )}
 
-
                   {resume.frameworks && (
                     <div className="mt-2 mob:mt-5">
-                      <h2 className="text-lg">Frameworks</h2>
+                      <h2 className="text-lg mb-1">Frameworks</h2>
                       <div className="flex flex-wrap gap-2">
                         {resume.frameworks.map((framework, index) => (
                           <div
                             key={index}
-                            className= {`px-2 py-1 mb-1 ${mount && theme.theme === "dark" ? "bg-slate-700 hover:bg-slate-500" : "bg-gray-100 hover:bg-gray-50"} rounded transition-colors duration-200`}
+                            className={`px-2 py-1 mb-1 bg-slate-700 hover:bg-slate-500 opacity-75 rounded transition-colors duration-200`}
                           >
                             {framework}
                           </div>
